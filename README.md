@@ -33,30 +33,3 @@ The text from the reviews was embedded using a pre-trained transformer model (se
 
 4. Article Generation (LLM)
 The final step attempted to generate product articles based on sentiment and product categories using GPT-2. Although the model was fine-tuned, this step did not succeed as expected.
-
-Files
-1429_1.csv: The original dataset.
-classified_reviews_clean.csv: Cleaned data with sentiment labels.
-cleaned_classified_clustered_reviews.csv: Data after clustering.
-review_embeddings.npy: Embeddings generated from reviews.
-Dependencies
-transformers
-sentence-transformers
-scikit-learn
-nltk
-torch
-pandas
-matplotlib
-seaborn
-How to Run
-Install the required dependencies:
-bash
-pip install -r requirements.txt
-Download the dataset and place it in the appropriate directory.
-Run the script to clean data, classify sentiment, and cluster product categories.
-Fine-tune the GPT-2 model to generate product category reviews.
-Results
-Sentiment Classification: High accuracy achieved in categorizing the reviews.
-Clustering: Five distinct product categories identified.
-Article Generation: The attempt to generate coherent articles based on product category and sentiment is still in progress.
-
